@@ -1,1 +1,1 @@
-add stuff here
+if getgenv().aimbot_loaded then return end
