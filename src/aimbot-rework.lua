@@ -129,7 +129,7 @@ end)
 services.runservice.RenderStepped:Connect(function()
     update_drawings()
     if aiming then
-        if aimed_at.Character.Humanoid.Health < 1 then aimed_at = nil end
+        if aimed_at ~= nil and aimed_at.Character.Humanoid.Health < 1 then aimed_at = nil end
         local closest
         if settings.sticky then
             if aimed_at and aimed_at.Character:FindFirstChild(settings.aimbot_aimpart) then
