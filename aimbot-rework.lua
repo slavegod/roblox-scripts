@@ -4,11 +4,11 @@
 ]]
 
 -- silence unknown constants for vsc
-local getgenv, cloneref, Drawing
+--local getgenv, cloneref, Drawing
 
 getgenv().aimbot_config = {
     aimbot_settings = {
-        aimbot_toggle_key = Enum.keycodes.O, -- toggles the aimbot on / off (includes FOV); find keycodes at https://create.roblox.com/docs/reference/engine/enums/KeyCode
+        aimbot_toggle_key = Enum.KeyCode.O, -- toggles the aimbot on / off (includes FOV); find keycodes at https://create.roblox.com/docs/reference/engine/enums/KeyCode
         aimbot_key = Enum.UserInputType.MouseButton2, -- use the aimbot with this key
         aimbot_fov = 130,
 
@@ -29,3 +29,5 @@ getgenv().aimbot_config = {
         notifications = true, -- shows status of various stuff
     },
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/slavegod/roblox-scripts/refs/heads/main/src/aimbot-rework.lua"))()
